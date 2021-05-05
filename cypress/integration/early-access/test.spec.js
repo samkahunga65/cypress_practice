@@ -9,11 +9,11 @@ Given("user is on the landing page", ()=>{
     landing.checkIfLanding()
 })
 When("user clicks get early access button", ()=>{
-    cy.percySnapshot('landing')
+    cy.percySnapshot()
     landing.gotoSubmit("p@p.com")
 })
 Then("user is taken to get early access page", ()=>{
-    cy.percySnapshot('earlyaccess')
+    cy.percySnapshot()
     earlyaccess.checkIfEarlyAccess()
 })
 Given("user is on the get early access page", ()=>{
@@ -32,5 +32,5 @@ When("user clicks submit button", ()=>{
     earlyaccess.submit()
 })
 Then("page shows thank you message", ()=>{
-    cy.percySnapshot("message")
+    cy.percySnapshot()
 })
