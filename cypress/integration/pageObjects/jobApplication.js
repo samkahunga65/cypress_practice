@@ -23,8 +23,8 @@ export class JobApplication{
         cy.get('#job_application_answers_attributes_1_text_value').type(portfolio)
     }
     selectJob(){
-        cy.get('#s2id_job_application_answers_attributes_2_answer_selected_options_attributes_2_question_option_id > .select2-choice > .select2-arrow > b').click()
-        cy.get('#selectedOption > .select2-result-label').click()
+        cy.get('#s2id_job_application_answers_attributes_2_answer_selected_options_attributes_2_question_option_id > .select2-choice > .select2-chosen').click()
+        cy.get(':nth-child(6) > .select2-result-label').click()
     }
     selectLocation(){
         cy.get('#s2id_job_application_answers_attributes_3_answer_selected_options_attributes_3_question_option_id > .select2-choice > .select2-arrow > b').click()
@@ -34,7 +34,6 @@ export class JobApplication{
         cy.get('#job_application_answers_attributes_4_text_value').type('today')
     }
     submit(){
-        cy.get('#job_application_answers_attributes_4_text_value').click()
-        
+        cy.get('#submit_app').click()        
     }
 }

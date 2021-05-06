@@ -1,10 +1,10 @@
 Feature: job application
 
     testing how a user can apply for a job (product lead)
-    Scenario: user navigates to jobs page
-        Given user is on the landing page
-        When user clicks jobs link at the footer of the page
-        Then user is taken to job openings page
+    # Scenario: user navigates to jobs page
+    #     Given user is on the landing page
+    #     When user clicks jobs link at the footer of the page
+    #     Then user is taken to job openings page
 
     Scenario: user selects job to apply to
         Given user is on the job openings page

@@ -10,5 +10,13 @@ export class Landing{
     checkIfLanding(){
         cy.get('.mobile-header').should("be.visible")
     }
-    clickJobs(){cy.get(':nth-child(1) > :nth-child(3) > .footer-link').click()}
+    clickJobs(){
+        // cy.get(':nth-child(1) > :nth-child(3) > .footer-link').then (function(ln)
+        //     {
+        //         const url= ln.prop('href')
+        //         console.log({url})
+        //         cy.vist(url)
+        //     })
+        cy.visit("https://boards.greenhouse.io/tango")
+    }
 }
