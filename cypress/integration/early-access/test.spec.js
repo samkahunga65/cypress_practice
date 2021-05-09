@@ -1,8 +1,11 @@
 const { Earlyaccess } = require("../pageObjects/earlyAccess")
+const { JobApplication } = require("../pageObjects/jobApplication")
 const { Landing } = require("../pageObjects/landing")
 
 const landing = new Landing()
 const earlyaccess = new Earlyaccess()
+const jobApplication = new JobApplication()
+
 Given("user is on the landing page", ()=>{
     cy.visit('https://www.tango.us/')
     

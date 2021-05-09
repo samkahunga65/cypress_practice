@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "cypress": "cypress open",
-    "percy": "percy exec -- cypress run"
+    "percy": "npx percy exec -- cypress run",
+    "percy_token": "export PERCY_TOKEN=15bf3a8fb0dd88f7e26f40d30b390ab14b297acfc705e2325ef10c1d6991799c"
   },
   "keywords": [],
   "author": "",
@@ -18,5 +19,9 @@
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true
+  },
+  "dependencies": {
+    "@axe-core/cli": "^4.1.1",
+    "dotenv": "^9.0.0"
   }
 }

@@ -13,5 +13,11 @@ Feature: job application
 
     Scenario: user applies for job
         Given user is on the application page
-        When user fills in personal details
+        When user fills in "Fname"
+        And user fills in "Lname"
+        And user fills in "email"
+        And user fills in "resume"
+        And user fills in "Linkedin"
+        And user fills in "portfolio"
+        And user fills in other personal details
         Then user is shown a message saying lets tango
